@@ -58,7 +58,7 @@ import flixel.addons.ui.FlxUIDropDownMenu;
 import backend.MusicBeatSubstate;
 import objects.Note;
 import objects.StrumNote;
-import backend.Song;
+import backend.Section.SwagSection;
 #else
 import Section.SwagSection;
 import Song;
