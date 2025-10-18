@@ -15,7 +15,7 @@ import substates.MusicBeatSubstate;
 #elseif (PSYCH && PSYCHVERSION >= "0.7")
 // === Psych Engine 0.7 and newer ===
 import flixel.addons.ui.FlxUIDropDownMenu;
-import backend.Song.SwagSection;
+import backend.Section.SwagSection;
 import states.PlayState;
 import backend.CoolUtil;
 import backend.Conductor;
@@ -38,7 +38,7 @@ import backend.Song;
 
 #elseif PSYCH
 // === Psych-based forks (like Novaflare Engine) ===
-import backend.Section.SwagSection; // different path for NF
+//import backend.Section.SwagSection; // different path for NF
 import backend.Song;
 import states.PlayState;
 import backend.CoolUtil;
