@@ -43,6 +43,9 @@ import MusicBeatSubstate;
 #if LUA_ALLOWED
 import psychlua.FunkinLua;
 import psychlua.HScript as FunkinHScript;
+#else
+import scripts.lua.FunkinLua;
+import scripts.hscript.HScript as FunkinHScripts;
 #end
 #end
 
