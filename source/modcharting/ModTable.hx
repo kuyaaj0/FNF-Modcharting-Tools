@@ -174,7 +174,7 @@ class ModTable
             var tween = renderer.createTween(modifiers.get(modifier), {currentValue: val}, time, {ease: easefunc,
                 onComplete: function(twn:FlxTween) {
                     var modifierTag:String = (tag != null ? tag : modifier);
-                    if(FlxG.state == "states.PlayState"){
+                    if (FlxG.state is states.PlayState) {
                         #if PSYCH
                         #if (PSYCHVERSION >= "0.7")
                             PlayState.instance.callOnScripts("onModifierComplete", [modifierTag]);
