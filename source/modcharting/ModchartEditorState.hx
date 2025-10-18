@@ -1406,7 +1406,8 @@ class ModchartEditorState extends #if (PSYCH && PSYCHVERSION >= "0.7") backend.M
 
             strumLineNotes.add(babyArrow);
             #if PSYCH 
-            babyArrow.playerPosition();
+            if (Reflect.hasField(babyArrow, "playerPosition"))
+				Reflect.callMethod(babyArrow, Reflect.field(babyArrow, "playerPosition"), []);
             #end
         }
     }
