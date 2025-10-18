@@ -21,8 +21,8 @@ import modding.scripts.languages.HScript;
 
 #if (PSYCH && PSYCHVERSION >= "0.7")
 #if LUA_ALLOWED
-import psychlua.FunkinLua;
-import psychlua.HScript as FunkinHScript;
+import scripts.lua.FunkinLua;
+import scripts.hscript.HScript as FunkinHScript;
 #end
 #end
 
