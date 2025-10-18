@@ -21,6 +21,8 @@ import backend.ClientPrefs;
 import backend.Paths;
 import states.LoadingState;
 import backend.Difficulty;
+#else
+import backend.Section.SwagSection;
 #if SCEModchartingTools
 import substates.MusicBeatSubstate;
 #else
