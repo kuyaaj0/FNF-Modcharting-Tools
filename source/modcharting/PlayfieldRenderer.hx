@@ -36,8 +36,6 @@ import Note;
 import StrumNote;
 #end
 
-import funkin.graphics.FunkinSprite;
-
 using StringTools;
 
 //a few todos im gonna leave here:
@@ -55,7 +53,7 @@ typedef StrumNoteType =
 #elseif ANDROMEDA Receptor
 #else FlxSprite #end;
 
-class PlayfieldRenderer extends FunkinSprite //extending flxsprite just so i can edit draw
+class PlayfieldRenderer extends FlxSprite //extending flxsprite just so i can edit draw
 {
     public var strumGroup:FlxTypedGroup<StrumNoteType>;
     public var notes:FlxTypedGroup<Note>;
