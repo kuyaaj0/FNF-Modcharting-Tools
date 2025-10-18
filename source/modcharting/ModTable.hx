@@ -219,7 +219,7 @@ class ModTable
                         if (modifiers.exists(modifier))
                             modifiers.get(modifier).subValues.get(subValue).value = val;
                         var modifierTag:String = (tag != null ? tag : '$modifier-$subValue');
-                        if (Main.currentState == "states.PlayState"){
+                        if (FlxG.state is states.PlayState) {
                             #if PSYCH
                                 #if (PSYCHVERSION >= "0.7")
                                 PlayState.instance.callOnScripts("onModifierComplete", [modifier, subValue]);
