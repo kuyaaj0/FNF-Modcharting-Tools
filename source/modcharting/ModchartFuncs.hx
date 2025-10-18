@@ -22,7 +22,8 @@ import modding.scripts.languages.HScript;
 #if (PSYCH && PSYCHVERSION >= "0.7")
 #if LUA_ALLOWED
 import scripts.lua.FunkinLua;
-import scripts.hscript.HScript as FunkinHScript;
+import scripts.hscript.HScriptBase as FunkinHScriptBase;
+import scripts.hscript.HScript as FunkinHSctipt
 #end
 #end
 
@@ -162,7 +163,7 @@ class ModchartFuncs
         {
             #if (PSYCH && PSYCHVERSION >= "0.7")
             #if HSCRIPT_ALLOWED
-            FunkinHScript.initHaxeModule(funkin);
+            FunkinHScriptBase.initHaxeModule(funkin);
     
             if (funkin.hscript != null)
             {
