@@ -41,11 +41,8 @@ import MusicBeatSubstate;
 
 #if (PSYCH && PSYCHVERSION >= "0.7")
 #if LUA_ALLOWED
-import psychlua.FunkinLua;
-import psychlua.HScript as FunkinHScript;
-#else
 import scripts.lua.FunkinLua;
-import scripts.hscript.HScript as FunkinHScripts;
+import scripts.hscript.HScript as FunkinHScript;
 #end
 #end
 
