@@ -98,7 +98,7 @@ class ModchartFuncs
             #end
         #end
         #if !(PSYCHVERSION >= "0.7")
-            #if hscript
+            /*#if hscript
             if (FunkinLua.hscript != null)
             {
                 FunkinLua.hscript.variables.set('Math', Math);
@@ -109,7 +109,7 @@ class ModchartFuncs
                 FunkinLua.hscript.variables.set('NotePositionData', NotePositionData);
                 FunkinLua.hscript.variables.set('ModchartFile', ModchartFile);
             }
-            #end
+            #end*/
         #end
 
         #elseif (LEATHER && linc_luajit)
@@ -169,7 +169,7 @@ class ModchartFuncs
     
             if (FunkinHScriptBase != null)
             {
-                #if (SScript >= "6.1.80")
+                /*#if (SScript >= "6.1.80")
                     funkin.hscript.setClass(Math);
                     funkin.hscript.setClass(PlayfieldRenderer);
                     funkin.hscript.setClass(ModchartUtil);
@@ -185,7 +185,7 @@ class ModchartFuncs
                     funkin.hscript.set('NoteMovement', NoteMovement);
                     funkin.hscript.set('NotePositionData', NotePositionData);
                     funkin.hscript.set('ModchartFile', ModchartFile);
-                #end
+                #end*/
             }
             #end
             #elseif LEATHER
