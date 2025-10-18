@@ -1159,9 +1159,9 @@ class ModchartEditorState extends #if (PSYCH && PSYCHVERSION >= "0.7") backend.M
 
         //var songName:String = Paths.formatToSongPath(PlayState.SONG.song);
 
-        for (section in noteData)
+        for (section in (noteData : Array<Dynamic>))
         {
-            for (songNotes in section.sectionNotes)
+            for (songNotes in (section.sectionNotes : Array<Dynamic>))
             {
                 var daStrumTime:Float = songNotes[0];
                 #if LEATHER 
