@@ -11,7 +11,9 @@ import utilities.NoteVariables;
 import states.LoadingState;
 import states.MusicBeatState;
 import substates.MusicBeatSubstate;
+
 #elseif (PSYCH && PSYCHVERSION >= "0.7")
+// === Psych Engine 0.7 and newer ===
 import flixel.addons.ui.FlxUIDropDownMenu;
 import backend.Song.SwagSection;
 import states.PlayState;
@@ -21,8 +23,6 @@ import backend.ClientPrefs;
 import backend.Paths;
 import states.LoadingState;
 import backend.Difficulty;
-#else
-import backend.Section.SwagSection;
 #if SCEModchartingTools
 import substates.MusicBeatSubstate;
 #else
@@ -35,18 +35,38 @@ import objects.StrumArrow;
 import objects.StrumNote;
 #end
 import backend.Song;
+
+#elseif PSYCH
+// === Psych-based forks (like Novaflare Engine) ===
+import backend.Section.SwagSection; // different path for NF
+import backend.Song;
+import states.PlayState;
+import backend.CoolUtil;
+import backend.Conductor;
+import backend.ClientPrefs;
+import backend.Paths;
+import states.LoadingState;
+#if SCEModchartingTools
+import substates.MusicBeatSubstate;
 #else
+import backend.MusicBeatSubstate;
+#end
+import objects.Note;
+import objects.StrumNote;
+
+#else
+// === Fallback for older engines ===
 import Section.SwagSection;
 import Song;
 import MusicBeatSubstate;
 #end
 
-#if (PSYCH && PSYCHVERSION >= "0.7")
-#if LUA_ALLOWED
+
+#if (PSYCH && LUA_ALLOWED)
 import scripts.lua.FunkinLua;
 import scripts.hscript.HScript as FunkinHScript;
 #end
-#end
+
 
 #if sys
 import sys.FileSystem;
