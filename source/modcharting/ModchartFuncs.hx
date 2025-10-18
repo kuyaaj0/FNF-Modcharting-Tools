@@ -23,7 +23,7 @@ import modding.scripts.languages.HScript;
 #if LUA_ALLOWED
 import scripts.lua.FunkinLua;
 import scripts.hscript.HScriptBase as FunkinHScriptBase;
-import scripts.hscript.HScript as FunkinHSctipt
+import scripts.hscript.HScript as FunkinHSctipt;
 #end
 #end
 
