@@ -167,7 +167,7 @@ class ModchartFuncs
             #if HSCRIPT_ALLOWED
             FunkinHScriptBase.initHaxeModule(funkin);
     
-            if (funkin.hscript != null)
+            if (FunkinHScriptBase != null)
             {
                 #if (SScript >= "6.1.80")
                     funkin.hscript.setClass(Math);
