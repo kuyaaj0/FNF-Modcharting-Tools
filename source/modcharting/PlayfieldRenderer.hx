@@ -418,7 +418,7 @@ class PlayfieldRenderer extends FlxSprite //extending flxsprite just so i can ed
             daNote.mesh.cameras = this.cameras;
             daNote.mesh.draw();
         }
-        else if(daNote.reduce){
+        else if(Reflect.hasField(daNote, "reduce") && Reflect.field(daNote, "reduce")){
             //render that shit
             var yOffset = -1; //fix small gaps
             if (reverseClip)
