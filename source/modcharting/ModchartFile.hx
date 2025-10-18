@@ -21,6 +21,8 @@ import sys.io.File;
 import hscript.*;
 #end
 #if (HSCRIPT_ALLOWED && PSYCH && PSYCHVERSION >= "0.7")
+import scripts.hscript.HScript as FunkinHScript;
+#else
 import psychlua.HScript as FunkinHScript;
 #end
 using StringTools;
